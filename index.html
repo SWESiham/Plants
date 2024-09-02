@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body>
+    <div class="content">
+        <!-- -------------------------ESRAA------------------------- -->
+        <div class="sidebar">
+            <i class="fas fa-bars" style="color: aliceblue;"></i>
+        </div>
+        <header class="active">
+            <div class="img_logo">
+                <div class="logo">
+                    <img src="image/plant%202.png" alt="Planto Logo" class="header-img">
+                </div>
+                <h1>Planto.</h1>
+            </div>
+            <nav class="nav-links navbar-expand-lg">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plant Type
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Calathea plant</a></li>
+                            <li><a class="dropdown-item" href="#">Calathea plant</a></li>
+                            <li><a class="dropdown-item" href="#">Calathea plant</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">More</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <i class="fas fa-search icon"></i>
+                <i class="fas fa-shopping-bag icon"></i>
+
+                <div class="cart-icon" style="position: relative; ">
+                    <i class="fas fa-shopping-cart" id="cart-icon"
+                        style="font-size: 25px; cursor: pointer; color: aliceblue;padding: 10px;" data-bs-toggle="modal"
+                        data-bs-target="#cartModal"></i>
+                    <span class="badge bg-danger" id="cart-count"
+                        style="position: absolute; top: -8px; right: -8px; font-size: 0.8rem;;">0</span>
+                </div>
+            </div>
+
+        </header>
+        <div class="grid-content">
+            <div class="grid-content-main">
+                <h1 class="grid-content-main-titel">Breath Natural</h1>
+                <p class="grid-content-main-pragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
+                    totam maxime quam aut aliquam, error magnam magni sint a, beatae unde. Iusto sequi voluptate error
+                    sint eius et recusandae vero.</p>
+                <button class="grid-content-main-btn"><a href="https://www.mashtalegypt.com/"
+                        target="_blank">Explore</a></button>
+
+                <i class="fas fa-play grid-content-main-icon" id="play-icon"></i>
+                <span class="grid-content-main-span">Live Demo..</span>
+                <audio id="audio-player" src="./audio/ElevenLabs_2024-08-27T18_57_00_Brian_pre_s50_sb75_se0_b_m2.mp3"
+                    preload="auto"></audio>
+            </div>
+            <!-- ///////////////////////////////// -->
+
+            <div class="grid-content-right">
+                <div id="plantCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2.png"
+                                class="d-block w-100" alt="Plant 1">
+
+                            <div class="carousel-caption-content">
+                                <p>Trendy House Plant.</p>
+                                <h5>Plant 1</h5>
+                                <a href="#" class="btn btn-primary add-to-cart" data-name="Plant 1" data-price="25">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-1.png"
+                                class="d-block w-100" alt="Plant 2">
+                            <div class="carousel-caption-content">
+                                <p>Trendy House Plant.</p>
+                                <h5>Plant 2</h5>
+                                <a href="#" class="btn btn-primary add-to-cart" data-name="Plant 2" data-price="30">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-2.png"
+                                class="d-block w-100" alt="Plant 3">
+                            <div class="carousel-caption-content">
+                                <p>Trendy House Plant.</p>
+                                <h5>Plant 3</h5>
+                                <a href="#" class="btn btn-primary add-to-cart" data-name="Plant 3" data-price="20">Buy
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#plantCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#plantCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- ////////////////////////////////////////////// -->
+
+            <div class="bottom-div">
+                <div></div>
+                <div class="bottom-div-image">
+                    <img src="image/unsplash__7LbC5J-jw4-1.png" alt="">
+                </div>
+                <div class="bottom-div-icons">
+                    <h6>alena Patel</h6>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Cart Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group" id="cart-items">
+                            <!-- Cart items will appear here -->
+                        </ul>
+                        <h3 class="mt-3">Total: $<span id="total-price">0.00</span></h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------------------------------------------------------ -->
+
+
+        <!-- -----------------------------------SHAHD------------------------- -->
+
+        <section class="section2">
+            <div class="boxx2">
+                <h2 id="header3">Our Trendy </h2>
+            </div>
+            <div class="plant_container">
+                <div class="plant_image">
+                    <img src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-2.png" alt="plant">
+                </div>
+                <div class="plant_detail">
+                    <h4>For Small Decs Ai Plat</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Unde tempora enim dolorem perspiciatis voluptates autem ex labore quidem.
+                    </p>
+                    <h5>Rs.599/-</h5>
+                    <button id="btn"
+                        onclick="window.location.href='https:/www.thesill.com/categories/planters-stands-and-plant-pots; '">Explore</button>
+                    <button id="btn1"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+            </div>
+            <div class="plant_container1">
+                <div class="plant_detail">
+                    <h4>For Fresh Decs Ai Plat</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Unde tempora enim dolorem perspiciatis voluptates autem ex labore quidem.
+                    </p>
+                    <h5>Rs.579/-</h5>
+                    <button id="btn"
+                        onclick="window.location.href='https:/www.thesill.com/categories/planters-stands-and-plant-pots;'">Explore</button>
+                    <button id="btn1"><i class="fa-solid fa-bag-shopping"></i></button>
+                </div>
+                <div class="plant_image1">
+                    <img src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-5.png" alt="plant">
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- -------------------------------------------------------------------------------- -->
+
+    <!-- -----------------------------------------ESRAA---------------------------------------------- -->
+    <section class="section3">
+        <div class="selling">
+            <div class="selling-titel">
+                <h2 id="header1">Our top selling</h2>
+            </div>
+            <div class="grid-selling">
+                <div class="grid-selling-item1 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+
+                </div>
+                <div class="grid-selling-item2 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-2.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+                </div>
+                <div class="grid-selling-item3 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-4.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+                </div>
+                <div class="grid-selling-item4 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-1.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+                </div>
+                <div class="grid-selling-item5 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-3.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+                </div>
+                <div class="grid-selling-item6 ">
+                    <div class="grid-selling-item1-img ">
+                        <img src="image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-5.png" alt="">
+                    </div>
+                    <div class="grid-selling-item1-captions">
+                        <h2>Calathea plant</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur .</p>
+                        <span>Rs.359/-</span>
+                        <i class="fas fa-shopping-bag i-con"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+
+    <!-- ---------------------------------------SHIMAA----------------------------------------------------- -->
+
+
+    <section class="customers" id="customers">
+        <div class="boxx">
+            <h2 id="header">Customer Review</h2>
+        </div>
+        <div class="customers-container">
+            <div class="box" id="box1">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Maxn Raval</h2>
+                <img src="./image/unsplash__7LbC5J-jw4.png">
+
+            </div>
+
+
+            <div class="box" id="box2">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Venely K</h2>
+                <img src="./image/unsplash__7LbC5J-jw4-1.png">
+
+            </div>
+
+            <div class="box" id="box3">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Lii thankur</h2>
+                <img src="./image/unsplash__7LbC5J-jw4-2.png">
+
+            </div>
+
+
+            <div class="box" id="box4" style="display: none;">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Maya</h2>
+                <img src="./image/unsplash__7LbC5J-jw4-1.png">
+
+            </div>
+
+            <div class="box" id="box5" style="display: none;">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Alex</h2>
+                <img src="./image/unsplash__7LbC5J-jw4-2.png">
+
+            </div>
+
+            <div class="box" id="box6" style="display: none;">
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni explicabo aliquam
+                    deleniti
+                    tenetur, necessitatibus possimus temporibus ad, dignissimos quia, asperiores illum error magnam
+                    pariatur ab aspernatur facere architecto placeat!</p>
+                <h2>Gorge</h2>
+                <img src="./image/unsplash__7LbC5J-jw4.png">
+
+            </div>
+        </div>
+        <center><b><button id="more-reviews">...</button></b></center>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+
+    <!-- ---------------------------------------SIHAM----------------------------------------------------- -->
+
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="OurBest">
+                <h1 id="header4">Our Best O<sub>2</sub></h1>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card card-1">
+                        <div class="card-img">
+                            <img class="card-img-top"
+                                src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 1.png" alt="Title"
+                                draggable="false" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">We Have Small And Best O<sub>2</sub> Plants Collection's</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <div class="explore">
+                                <a href="https://www.mashtalegypt.com/" id="ExploreBtn" target="_blank">Explore</a>
+                            </div>
+                            <div id="counter-arrow">
+                                <button class="carousel-control-prev lft-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <span class="numOfCards">01/04</span>
+                                <button class="carousel-control-next rht-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card card-2">
+                        <div class="card-img">
+                            <img class="card-img-top"
+                                src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-2.png" alt="Title"
+                                draggable="false" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">We Have Small And Best O<sub>2</sub> Plants Collection's</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <div class="explore">
+                                <a href="https://www.mashtalegypt.com/" id="ExploreBtn" target="_blank">Explore</a>
+                            </div>
+                            <div id="counter-arrow">
+                                <button class="carousel-control-prev lft-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <span class="numOfCards">
+                                    02/04
+                                </span>
+                                <button class="carousel-control-next rht-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card card-3">
+                        <div class="card-img">
+                            <img class="card-img-top"
+                                src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-3.png" alt="Title"
+                                draggable="false" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">We Have Small And Best O<sub>2</sub> Plants Collection's</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <div class="explore">
+                                <a href="https://www.mashtalegypt.com/" id="ExploreBtn" target="_blank">Explore</a>
+                            </div>
+                            <div id="counter-arrow">
+                                <button class="carousel-control-prev lft-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <span class="numOfCards">
+                                    03/04
+                                </span>
+                                <button class="carousel-control-next rht-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+                    <div class="card card-4">
+                        <div class="card-img">
+                            <img class="card-img-top"
+                                src="./image/Rose Gold Feminine Calligraphy Monogram Logo(15) 2-1.png" alt="Title"
+                                draggable="false" />
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">We Have Small And Best O<sub>2</sub> Plants Collection's</h2>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur a
+                                explicabo
+                                itaque pariatur corporis voluptatibus minus obcaecati </p>
+                            <div class="explore">
+                                <a href="https://www.mashtalegypt.com/" id="ExploreBtn" target="_blank">Explore</a>
+                            </div>
+                            <div id="counter-arrow">
+                                <button class="carousel-control-prev lft-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <span class="numOfCards">
+                                    04/04
+                                </span>
+                                <button class="carousel-control-next rht-arrow" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-footer">
+                    <div id="dot1" class="dot" style="width: 25px;"></div>
+                    <div id="dot2" class="dot"></div>
+                    <div id="dot3" class="dot"></div>
+                    <div id="dot4" class="dot"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------- -->
+    <hr style="color: blanchedalmond;">
+    <div class="cnt">
+        <div class="left-content">
+            <div class="logoo">
+                <img src="./image/plant 2.png" alt="Plant">
+                <p>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Ducimus animi architecto temporibus
+                    repellendus itaque cum dolor dicta sunt? In unde nesciunt cumque hic, illo
+                    ducimus rerum dignissimos excepturi dolorum ipsam?</p>
+                <h1>Planto.</h1>
+            </div>
+            <div class="social-links">
+                <a href="#" title="Facebook">FB</a>
+                <a href="#" title="Twitter">TW</a>
+                <a href="#" title="LinkedIn">LI</a>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="brand">Quick Link's</div>
+            <ul class="links">
+                <li class="item"><a class="link" href="#">Home</a></li>
+                <li class="item"><a class="link" href="#">Type's Of Plant's</a></li>
+                <li class="item"><a class="link" href="#">Contact</a></li>
+                <li class="item"><a class="link" href="#">Privacy</a></li>
+            </ul>
+            <div class="subscribe-container">
+                <!-- <label for="email">For Every Update:</label> -->
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Enter Email">
+                    <button onclick="subscribe()">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
